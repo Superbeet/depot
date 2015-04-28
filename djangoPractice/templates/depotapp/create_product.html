@@ -1,0 +1,20 @@
+
+{% extends "base.html" %}
+
+{% block title %} Product - Create {% endblock %}
+
+{% block heading %}<h1>  Product - Create </h1>  {% endblock %}
+{% block content %} 
+<table>
+<form method="POST" action="{% url 'submit_product' %}"> {% csrf_token %}
+  {{form}}
+  <tr>
+    <td colspan="2" align="right"><input type="submit" value="Create"/></td>
+  </tr>
+
+</form>
+
+<td colspan="2" align="right"><input type="submit" value=" Back "/></td>
+
+</table>
+{% endblock %}

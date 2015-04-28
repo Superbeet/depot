@@ -1,0 +1,33 @@
+
+{% extends "base.html" %}
+
+{% block title %} 
+Product - View 
+{% endblock %}
+
+{% block pagename %} 
+Product - View  
+{% endblock %}
+
+{% block heading %} 
+<h1> Product</h1><h2>View</h2>  
+{% endblock %}
+
+{% block content %} 
+
+
+<div class = "contents">
+	<h3>Title</h3>
+	<h4>{{product_instance.title}} </h4>
+	<hr>
+	<h3>Description</h3>
+	<h4>{{product_instance.description}} </h4>
+	<hr>
+	<h3>Img_url</h3>
+	<h4>{{product_instance.image_url}} </h4>
+	<hr>
+	<h3>Price</h3>
+	<h4>{{product_instance.price}}</h4>
+</div>
+
+{% endblock %}
